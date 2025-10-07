@@ -12,6 +12,7 @@ jobs:
           java-package: jdk
   run-java:
     runs-on: ubuntu-latest
+    needs: setup-java
     steps: 
       - name: Checkout code
         uses: actions/checkout@v2
